@@ -5,7 +5,8 @@
 ___
 -производить заказ деталей по чертежами у определных контрагентов/исполнителей<br>
 
-![исполнители](https://disk.yandex.ru/i/nK8om3UcXVpK6g)
+[исполнители](https://disk.yandex.ru/i/nK8om3UcXVpK6g)
+
 ![добовление исполнителя](https://disk.yandex.ru/i/AmPsCGYNQb9QyA)
 
 
