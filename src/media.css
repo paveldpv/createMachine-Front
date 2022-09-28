@@ -1,0 +1,52 @@
+@media screen and (max-width:1180px){
+   
+  
+      a{
+         font-size: 15px;
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+      .navigator{
+         width: 120px;
+      }
+      .gridContainer{
+         grid-template-columns: 0.2fr 2fr;
+      } 
+      .navigator .material-icons{
+         color: #fedfaa;
+      }
+      .navigator .active .material-icons{
+         color: #32353b
+      }
+      .navText{
+         display: none;
+      }
+      .outlet .box{
+         margin: 5px;         
+         width: 90%;
+         
+      }
+      .outlet .box .loader{
+         font-size: 50px;
+         position: absolute;
+         top: 80%;
+         left: 90%;
+      }
+      .addbutton{
+         font-size: 10px;
+      }
+      .headerDebts span{
+         font-size: 15px;
+      }
+      .headerDebts .inputdebt span{
+         font-size: 15px;
+         width: 40%;
+      }
+      .mediaText{
+         font-size: 12px;
+      }
+     
+ }
+
+
+

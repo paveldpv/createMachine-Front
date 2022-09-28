@@ -1,0 +1,31 @@
+.MuiGrid-item{
+   font-size: 15px;
+   
+}
+.openSB{
+   padding:15px;
+   background-color:#32353b ;
+   display: inline-block;
+   color: #fedfaa;
+   border-radius: 11px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   cursor: pointer;
+   
+}
+
+
+.MYUbutton .MuiButton-outlined{
+   margin-top: 15px;
+   border: #32353b 1px solid;
+   color:#32353b;
+   display: block;
+   margin-bottom: 15px;
+   border-bottom-left-radius:15px ;
+   border-top-right-radius:15px;   
+   
+}
+.MYUbutton .MuiButton-outlined:hover{
+   border: #249e40 1px solid;
+   
+}

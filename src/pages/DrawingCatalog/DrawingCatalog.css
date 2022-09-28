@@ -1,0 +1,39 @@
+.box{
+   margin: 35px;
+   font-size: 20px;
+   padding-left: 40px;
+  
+  
+}
+.box a {
+   color: #32353b;
+   font-size: 20px;
+   line-height: 45px;   
+}
+.box ul {
+   width: 100%;   
+}
+.box li {
+   list-style-type: none;
+}
+.material-icons{
+   vertical-align: middle;
+   margin-right: 15px;
+   font-size: 35px;
+   
+}
+.outlinenav{
+   display: flex;
+   justify-content:space-between;
+   margin-top: 25px;
+}
+.moreTen{
+   list-style-position: inside;
+   -webkit-column-count: 2; 
+   column-count: 2;
+}
+.icon{
+   margin-right: 10px;
+   position: relative;
+   top: 10px;
+}

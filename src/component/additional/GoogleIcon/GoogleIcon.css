@@ -1,0 +1,39 @@
+.material-icons {
+   color: #32353b;
+   transition: 0,5s;
+   cursor: pointer;
+   position: relative;
+   
+}
+.material-icons:hover{   
+   
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+  
+}
+.material-icons:hover::before{
+  
+  content: attr(datatoltip);
+  position: absolute;
+  color: #32353b;
+  top: 100%;
+  right: -150%;
+  font-size: 20px; 
+  display: inline-block;
+  word-wrap: break-word; 
+  
+}
+.material-icons.toltipWhite:hover::before{
+  
+  content: attr(datatoltip);
+  position: absolute;
+  color: white;
+  top: 120%;
+  right: -150%;
+  font-size: 20px; 
+  display: inline-block;
+  word-wrap: break-word; 
+  
+}

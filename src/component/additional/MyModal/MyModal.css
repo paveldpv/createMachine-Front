@@ -1,0 +1,45 @@
+.WindowsModal{
+   padding: 15px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: auto;
+   border : 1px solid black;
+   border-bottom-left-radius:15px ;
+   border-top-right-radius:15px;
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+   background:#32353b;
+   color: #fedfaa;  
+         
+}
+.WindowsModal p{
+   font-size: 20px;
+   font-weight: bold;
+}
+.WindowsModal span{
+   color:#fedfaa ;
+}
+.modalName{
+   
+   padding: 30px;
+   align-self: center;
+   font-size: 25px;
+   text-align: center;
+  
+   
+}
+.amount {
+   
+   text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+}
+.modalNumber{
+   display: flex;
+   font-size: 25px;
+   justify-content: space-around;
+   
+}

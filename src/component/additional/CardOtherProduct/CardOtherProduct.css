@@ -1,0 +1,33 @@
+.cardimg img{
+   width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  padding-left: 10px;
+  
+
+}
+.fontSizeMin{
+ font-size: 15px;
+ overflow: hidden;
+ text-overflow: clip;
+
+}
+.infoComponent{
+   flex: 1 1 auto;
+  text-align: center;
+  height: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-rows: 40%;
+    
+}
+.addbutton{
+  background-color: #32353b;
+  color: #fedfaa;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+}

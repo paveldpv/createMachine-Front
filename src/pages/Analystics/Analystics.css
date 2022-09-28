@@ -1,0 +1,19 @@
+
+.wrapper{
+   display: flex;
+   justify-content: space-around;
+   
+}
+.title{
+   text-align: center;
+   display: block;
+   font-size: 25px;
+   font-weight: bolder;
+   
+}
+.border{
+   width: 45%;
+   border: #32353b 2px solid;
+   border-radius: 5px;
+   
+}

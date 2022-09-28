@@ -1,0 +1,39 @@
+.Basket{
+   display: flex;
+   width: 150px;
+   height: 100px;
+   border-radius: 7px;
+   background:#32353b;
+   color: #fedfaa; 
+   cursor: pointer;
+   transition: 0.5s;
+   position: relative;
+
+}
+.Basket span{
+   color: #fedfaa; 
+   font-size: 25px;
+   align-items: center;
+   padding-top: 30px;
+   padding-left: 6px;
+}
+.Basket:hover{
+   border-radius: 2%;
+   
+}
+.amountOrder::after{
+   content: attr(dataamount);
+   background-color: #c62828;
+   position: absolute;
+   font-size: 18px;
+   font-weight: 800;
+   width: 40px;
+   height: 30px;
+   text-align: center;
+   padding-top: 10px;
+   border-radius: 50%;
+   color: #fedfaa;
+   left: -10%;
+   top: 80%;
+}
+

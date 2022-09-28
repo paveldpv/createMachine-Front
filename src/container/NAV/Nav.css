@@ -1,0 +1,81 @@
+.navlink a {
+   text-decoration: none;
+   color:#fedfaa 
+    /* Убираем подчёркивание */
+  } 
+ 
+.navlink{
+   color: #fedfaa;
+   font-size: 20px;
+   text-align: center;
+   height: 50px;
+   line-height: 50px;
+   /* transition-duration:3,2s;
+   transition-timing-function: steps(10, end);   */
+         
+}
+.navlink:hover{
+   text-decoration: underline;
+   
+}
+.navigator{
+   padding-top: 20px;
+}
+
+
+.active{
+   background-color: #ffffff;   
+   display: block;
+   height: 50px;
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
+   position: relative;
+   
+}
+.active::before{
+   content: " ";
+   position: absolute;   
+   right: 0;
+   top: -20px;
+   width: 20px;
+   height: 20px;
+   background-color: transparent;
+   border-bottom-right-radius: 20px;
+   box-shadow: 7.5px 7.5px 0 7.5px #ffffff;
+}
+.active::after{
+   content: " ";
+   position: absolute;
+   right: 0;
+   bottom: -20px;
+   width: 20px;
+   height: 20px;
+   background-color: transparent;
+   border-top-right-radius: 20px;
+   box-shadow: 7.5px -7.5px 0 7.5px #ffffff;
+}
+
+
+
+.active span {
+   color: #32353b;
+   font-weight: bold;
+}
+.navigator::after{
+   content: "РСПК";
+   display: block;
+   background-color:#32353b;
+   position: relative;
+   font-size: 35px;
+   font-weight: bolder;
+   top: -450px;
+   color:#fedfaa ;
+   text-align: center;
+   padding-top: 15px;
+   height: 85px;
+   width: 100%;
+   border-top-left-radius: 35px;
+   border-top-right-radius: 35px;
+   
+   
+}

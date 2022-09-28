@@ -1,0 +1,50 @@
+.editDebt{
+   width: 1100px;
+}
+.currentDetail{
+   margin-top: 10px;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   padding: 8px;
+   text-align: center;
+   font-size: 25px;
+}
+.edit{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   padding: 5px;
+}
+.edit div{
+   margin: 5px;
+}
+.control{
+  
+}
+.editHeader{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 15px;
+   font-size: 20px;
+   margin-top: 15px;
+
+}
+.editDebt hr{
+   transform: rotate(180deg);
+}
+.iconControl{
+   
+  display: flex;
+  justify-content: space-around;
+   align-items: center;
+   font-size: 25px;
+   
+}
+/* .editHeader::after{
+   content: '';
+   
+   width: 90%;
+   height: 2px;
+   background-color:#fedfaa ;
+
+} */
+

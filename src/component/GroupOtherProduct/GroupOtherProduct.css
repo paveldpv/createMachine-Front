@@ -1,0 +1,25 @@
+.groupName{
+   display: grid;
+   width: 80%;
+   grid-template-columns: 40% 5% 5%;
+   margin-bottom: -8px;
+}
+.addComponent{
+   background-color: #fedfaa;
+   color:#32353b;  
+   max-width: 30%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   height: 100px;
+   display: flex;
+   justify-content: space-around;
+   
+   
+}
+.component{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3% ; 
+   
+   
+}

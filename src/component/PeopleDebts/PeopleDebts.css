@@ -1,0 +1,25 @@
+.headerDebts{
+   width: 100%;
+   display:grid;
+   grid-template-columns: 22.5% 22.5%  22.5% 22.5% 10%;
+   justify-content: space-around  
+   
+};
+.headerDebts span{
+   width: 33%;
+}
+.debts{
+   margin: 5px;
+   pad: 10px;
+}
+.debts hr{
+   background-color: #fedfaa;
+   height: 2px;
+   margin-top: 15px;
+   
+}
+.titleAccordion{
+   font-size: 25px;
+   font-weight: bold;
+   text-decoration: underline;
+}

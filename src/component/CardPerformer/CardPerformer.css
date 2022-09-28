@@ -1,0 +1,43 @@
+.cardPerformer{
+   color: #fedfaa;
+   background-color: #32353b;
+   border-radius: 8px;
+   padding: 5px;
+}
+.cardHeader{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  font-size: 20px;  
+   
+}
+.cardInfo li {
+   padding-right: 40px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   
+}  
+.cardInfo{
+   height: 150px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.redaction {   
+   margin-bottom: 8px;   
+   text-align: center;
+   
+}
+.redaction button{
+   border-radius: 8px;
+   background-color: #fedfaa;
+   column-rule: #32353b;
+   width: 90%;
+   font-size: 20px;
+   font-family: Comfortaa;
+   cursor: pointer;
+   margin-bottom: 8px;   
+   
+}

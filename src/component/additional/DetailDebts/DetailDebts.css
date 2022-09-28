@@ -1,0 +1,18 @@
+.elements{
+   margin-top: 15px;
+   border-bottom: 2px dashed #fedfaa;
+   padding-bottom: 10px;
+   
+}
+.totalPrcie{
+   margin-top: 15px;
+   font-size: 30px;
+   font-weight: bold ;
+   
+}
+.totalPrcie span:first-child{
+   padding-right: 50px;
+}
+.coming{
+   color: #dac2d3;
+}

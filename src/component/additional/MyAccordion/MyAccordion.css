@@ -1,0 +1,38 @@
+.MyAccordion{
+   margin-top: 15px;
+   
+   
+}
+.AccordionText{
+   width: 60%;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  font-weight: 900;
+  font-size: 18px;
+}
+.red{
+   color: #c62828;
+}
+
+.detailOrder{
+   padding-top: 25px;
+   display: grid;
+   grid-template-columns: 30% 50% 20%;
+   align-items: center;
+   gap: 15px;
+  
+}
+.infoPerformer{
+   font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+}
+.infoPerformer div:first-child{
+   font-weight: bolder;
+   font-size: 18px;
+   
+}

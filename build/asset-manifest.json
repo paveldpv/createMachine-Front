@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.542f7d45.css",
+    "main.js": "/static/js/main.ec9cf60d.js",
+    "static/media/Dusty Pro.ttf": "/static/media/Dusty Pro.ddb8c12fb324baddc9f9.ttf",
+    "index.html": "/index.html",
+    "main.542f7d45.css.map": "/static/css/main.542f7d45.css.map",
+    "main.ec9cf60d.js.map": "/static/js/main.ec9cf60d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.542f7d45.css",
+    "static/js/main.ec9cf60d.js"
+  ]
+}

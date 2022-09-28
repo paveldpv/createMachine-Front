@@ -1,0 +1,22 @@
+.performers{
+   display: grid;
+   grid-template-columns: 33% 33% 33% ;
+   gap: 5px;
+}
+.addPerformer{
+   width: 33%;   
+   color: #fedfaa;
+   background-color: #32353b;
+   font-size: 20px;
+   height: 55px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 8px;
+   cursor: pointer;
+   font-weight: bolder;
+   
+}
+.infoPerformer{
+   
+}

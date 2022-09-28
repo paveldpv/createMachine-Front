@@ -1,0 +1,14 @@
+.listNumber .MuiButton-outlined{
+   border: #32353b 1px solid;
+   color:#32353b;
+   border-bottom-left-radius:15px ;
+   border-top-right-radius:15px;
+}
+.listNumber .MuiButton-outlined:hover{
+   border: #249e40 1px solid;
+   
+}
+.listNumber{
+   display: inline-block;
+   margin: 5px;
+}

@@ -1,0 +1,8 @@
+.time{
+   display:flex;
+   font-size:20px;
+   flex-direction: column;
+   position: relative;
+   right: 150px;
+   color: #32353b;
+}

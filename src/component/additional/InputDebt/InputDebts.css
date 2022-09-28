@@ -1,0 +1,18 @@
+.inputdebt{
+   margin-top: 20px;
+   text-align:center;    
+}
+.inputdebt span{
+   padding-top: 10px;
+}
+
+.inputdebt span:last-child{
+   padding-top: 7px;
+   color: #32353b;
+   cursor: pointer;
+   margin-left: 15px;
+   font-size: 25px;
+   font-weight: bolder;
+   border-radius: 4px;
+   background-color: #fedfaa;
+}

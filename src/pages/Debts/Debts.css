@@ -1,0 +1,39 @@
+.add{   
+   width: 30%;
+   padding-left: 15px;   
+   height: auto;  
+   margin: 5px;
+}
+.add.material-icons{
+   font-size: 38px;
+   
+}
+.add span:hover{
+   
+   -webkit-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+   
+}
+.add span{
+   padding-top: 0;
+   padding: 15px;
+   display: flex;
+   transition-duration: 500ms;
+   gap: 5px;
+}
+.WindowsModal.add{   
+   display: flex;
+   gap: 15px;
+   color: #fedfaa;
+}
+
+.MuiOutlinedInput-root{
+   background-color: #fedfaa;
+}
+
+.MuiOutlinedInput-root.Mui-focused.MuiOutlinedInput-notchedOutlined {
+   background-color: #fedfaa;
+   color: #32353b;
+   
+}

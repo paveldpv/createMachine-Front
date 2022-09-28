@@ -1,0 +1,22 @@
+.formCouterparty li{
+   display: grid;
+   grid-template-columns: 15% 600px;
+   padding-top: 15px;
+   align-items: center;
+   gap: 30px;
+   font-size: 18px;
+   word-wrap: break-word;
+}
+.formCouterparty li:last-child span{
+   width: 36px;
+   
+}
+.control span{
+   cursor: pointer;
+   padding: 5px;
+}
+.control span:hover{
+   border: 2px solid #fedfaa;
+   border-radius: 5px;
+   font-size: 22px;
+}

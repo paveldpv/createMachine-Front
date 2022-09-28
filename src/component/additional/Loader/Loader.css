@@ -1,0 +1,39 @@
+@font-face {
+   
+   font-family: "Dusty Pro";    
+   src: url("../../../fonts/Dusty Pro.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+ } 
+ 
+.loader span{
+   text-decoration: none;
+   font-family: Dusty Pro;
+   font-size: 150px;
+   color: #32353b ;
+   cursor: help;
+   text-transform: uppercase;
+   color: transparent;
+   -webkit-text-stroke: 1px #32353b;
+   position: absolute;
+   top: 50%;
+   right: 30%;
+   
+}
+.loader span::before{
+   content: attr(data-text);
+   position: absolute;
+   color: #32353b;
+   width: 0%;
+   overflow: hidden;
+   transition: 1s; 
+   border-right: 8px solid #32353b;
+   animation: move 0.4s linear infinite;
+}
+@keyframes move{
+   from{
+      width: 100%;
+   }
+}
+
+
