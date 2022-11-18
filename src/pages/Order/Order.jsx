@@ -14,6 +14,10 @@ import FilterTextField from '../../component/FilterTextField/FilterTextField';
 
 import './Order.css'
 import { searchFilter } from '../../function/searchFiltertoNumber';
+import { getPerformersCurrentOrders } from '../../function/getPerformersCurrentOrders';
+
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
 
 export default function Order() {  
 
@@ -27,13 +31,14 @@ export default function Order() {
     selectPerformer: {ascending:false,current:false}
   })
   const [search,setSearch]=useState(``)
-
-  
+  const [performers, setPerformers] = useState([])
+  const [selectPerformer, setSelectPerformer] = useState(``)
 
   useEffect(()=>{
     axios.post(url+`order`).then(res=>{      
       setOrders(res.data)
       setLoader(false)      
+      setPerformers(getPerformersCurrentOrders(res.data))      
     })       
   },[])
  
@@ -76,9 +81,7 @@ export default function Order() {
       }
 
     }
-  }
-
-  
+  }  
 
   const sortOrder=(arr=[],triger=``,up=false)=>{  
       switch (triger) {
@@ -100,10 +103,29 @@ export default function Order() {
     
   }
 
+  const performerFilter=(idPerformer,orders)=>{
+    if(!idPerformer) return orders
+    return orders.filter(order=>order.performer.id==idPerformer)
+  }
+  
   return (
     <div className='box'>  
     <div className='search'>
       <FilterTextField setSearch={setSearch} titleSearch={`поиск по названию`}/>
+      <div className='filterSelect'>
+        <span>Исполнитель</span>
+        <div>
+          <Select          
+          value={selectPerformer}
+          onChange={(e)=>setSelectPerformer(e.target.value)}
+          >
+            {performers.map((performer,index)=><MenuItem key={index} value={performer.id} >{performer.name}</MenuItem>)}
+          </Select>
+          <span className={`${!selectPerformer&&"none"}`} onClick={()=>setSelectPerformer(``)}>
+             <GoogleIcon icon={`close`} color={`#32353b`}/>
+          </span>
+        </div>
+      </div>
       <NavLink to='/HistoryOrders'>
         <span className='openSB'>Посмотеть историю заказов</span>
        </NavLink>
@@ -139,11 +161,12 @@ export default function Order() {
       </div>
       <hr />
       <TransitionGroup className='GrooupAccordion'>
-        {searchFilter(sortOrder(orders,filter,up),search,`order`).map((order,index)=>{
+        {performerFilter(selectPerformer,searchFilter(sortOrder(orders,filter,up),search,`order`)).map((order,index)=>{
           return <CSSTransition timeout={500} classNames="item" key={index}>                    
                       <OrderList 
                       order={order} 
-                      setOrder={setOrders}/>                                     
+                      setOrder={setOrders}
+                      history={false}/>                                     
                 </CSSTransition>
         })}
       </TransitionGroup>

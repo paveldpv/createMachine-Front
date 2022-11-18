@@ -66,7 +66,8 @@ export default function MyModalEditDebt(props) {
         data:null
       }
       setOpen(false)
-      await axios.post(url+type,debt)
+      
+      await axios.post(url+`removedebts`,debt)
         .then(res=>{
            console.log(res.data);
         })

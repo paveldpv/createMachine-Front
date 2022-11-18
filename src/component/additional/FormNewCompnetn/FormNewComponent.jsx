@@ -15,7 +15,9 @@ import axios from 'axios'
 import './FormNewComponent.css'
 
 export default function FormNewComponent(props) {
-  
+   console.log(`==========`);
+  console.log(props);
+  console.log(`==========`);
    const [name,setName]    = useState(props.name||``)
    const [units,setUnits]  = useState(props.units||`шт`)
    const [src,setSrc]      = useState(props.src||`https://www.car72.ru/images/catalog/b_1581.jpg`)
@@ -27,7 +29,7 @@ export default function FormNewComponent(props) {
          name : name,
          units: units,
          src  : src,
-         id   : uniqid(),
+         id   : props.idComponent||uniqid(),
          date : moment().format(`LL`)
       }
    

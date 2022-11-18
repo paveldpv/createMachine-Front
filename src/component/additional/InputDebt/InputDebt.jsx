@@ -45,7 +45,7 @@ export default function InputDebt(props) {
                senderId:`admin`
             }
            }           
-          await axios.post(url+`debts`,debt)//перерендерить компоненты
+          await axios.post(url+`addnewdebt`,debt)//перерендерить компоненты
           axios.post(url+`debts`).then(res=> props.setDebts(res.data))
       }  
      

@@ -1,0 +1,16 @@
+.filter{
+   display: flex;
+   justify-content: space-around;
+   padding-top: 1rem;
+}
+.filterSelect{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+  
+}
+.filterPerformer{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr
+}

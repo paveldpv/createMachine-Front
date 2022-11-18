@@ -85,6 +85,7 @@ export default function CardOtherProduct(props) {
             </MenuItem>
          </Menu>       
       <FormNewComponent 
+       idComponent= {data.id}
        openForm={openForm} 
        redaction={true}
        setOpenForm={setopenForm}

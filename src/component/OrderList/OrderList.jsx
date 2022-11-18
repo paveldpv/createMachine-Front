@@ -8,21 +8,26 @@ import { url } from '../../config/config';
 
 import MyModalEditORder from '../additional/MyModalEditOrder/MyModalEditORder';
 import ControlIcon from '../additional/ControlIcon/ControlIcon';
+import ControlPanelOrder from '../ControlPanelOrder/ControlPanelOrder';
 
 import {getNumberAndName} from '../../function/getNameOrNumber'
+import { getCurrentValidateSrc } from '../../function/getCurrentValidateSrc';
 
 import './OrderList.css'
 
 export default function OrderList(props) {
-  
+  let historyList = props.history
   let   performer                      = props.order.performer
   const [openImage,setOpenImage]       = useState(false)  
   const [open,setOpen]                 = useState(false)
-
+  
   const removeOrder =  async(e)=>{    
     const idRemove = props.order.id
     const idGroupRemove = props.order.idGroup
-    await axios.delete(`${url}setorder?idRemove=${idRemove}&idGroupRemove=${idGroupRemove}`)
+    const orderName = props.order.order
+    const amount = props.order.amount
+    const namePerformer = props.order.performer.name
+    await axios.delete(`${url}setorder?idRemove=${idRemove}&idGroupRemove=${idGroupRemove}&orderName=${orderName}&amount=${amount}&performer=${namePerformer}`)
     .then(res=>console.log(res)    
     )
     .catch(eror=>console.log(eror))
@@ -55,7 +60,7 @@ export default function OrderList(props) {
         <li onClick={()=>setOpenImage(true)}>
           {openImage &&
             (<Lightbox            
-            large={props.order.src}
+            large={getCurrentValidateSrc(props.order.src)}
             onClose={()=>setOpenImage(false)}
             />)}          
           {<ControlIcon title={`показать чертеж`} icon={`image`} color={props.order.urgent?`#c62828`:``}/>}          
@@ -73,7 +78,11 @@ export default function OrderList(props) {
           </ul>
         </li>
         <li>
-          <ul className='listIcon'>
+          {!historyList?<ControlPanelOrder removeOrder={removeOrder} urgentOrder={urgentOrder}  setOpen={setOpen} order={props.order}/>
+          :<span>срок поставки: {props.order.deltaTime +`дн.`||`не отслеживался`}</span>}
+          
+
+          {/* <ul className='listIcon'>
             <li onClick={removeOrder} >              
               <ControlIcon title={`удалить/заказ пришел`} icon={`delete`} color={props.order.urgent?`#c62828`:``} />
             </li>            
@@ -85,7 +94,7 @@ export default function OrderList(props) {
               {props.order.amount>1 &&
                 <ControlIcon title={`подтвердить часть заказа`} icon={`delete_sweep `} color={props.order.urgent?`#c62828`:``}/>}
             </li>
-          </ul>
+          </ul> */}
         </li>
       </ul>
       <hr />
